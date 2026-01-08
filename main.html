@@ -3,11 +3,68 @@
 <html>
 
 <head>
+	<style>
+        /* Root background */
+        :root {
+            background-color: rgb(135, 206, 235);
+        }
+
+        /* Article paragraphs */
+        article p:first-child {
+            color: white;
+            background-color: black;
+        }
+
+        article p:nth-child(2) {
+            color: black;
+        }
+
+        article p:last-child {
+            color: red;
+        }
+
+        /* Unordered list common style */
+        ul li {
+            background-color: gray;
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Odd items white background */
+        ul li:nth-child(odd) {
+            background-color: white;
+        }
+
+        /* First and last item font size */
+        ul li:first-child,
+        ul li:last-child {
+            font-size: 22px;
+        }
+
+        /* Third-to-last item */
+        ul li:nth-last-child(3) {
+            background-color: pink;
+        }
+    </style>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+
+	<article>
+        <p>This is first paragraph</p>
+        <p>This is second paragraph</p>
+        <p>This is third paragraph</p>
+    </article>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
